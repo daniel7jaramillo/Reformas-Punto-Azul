@@ -147,7 +147,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  form.addEventListener("submit", (event) => {
+    
+  const WEB3FORMS_KEY = "56f0a601-3337-4f14-8d72-538203366de0";
+  const submitButton = form.querySelector('button[type="submit"]');
+
+  form.addEventListener("submit", async (event) => {
     event.preventDefault();
     successMessage.hidden = true;
 
@@ -160,8 +164,32 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // Aquí iría el envío real (fetch a tu backend, Formspree, etc.).
-    form.reset();
-    successMessage.hidden = false;
+    const formData = new FormData(form);
+    formData.append("access_key", WEB3FORMS_KEY);
+    formData.append("name", form.elements["nombre"].value);
+    formData.append("subject", "Nueva solicitud de presupuesto - Punto Azul");
+    formData.append("from_name", "Web Punto Azul");
+
+    const originalText = submitButton.textContent;
+    submitButton.disabled = true;
+    submitButton.textContent = "Enviando...";
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+      const data = await response.json();
+
+      if (!data.success) throw new Error(data.message);
+
+      form.reset();
+      successMessage.hidden = false;
+    } catch (error) {
+      alert("No se pudo enviar la solicitud. Inténtalo de nuevo o llámanos al +34 631 661 933.");
+    } finally {
+      submitButton.disabled = false;
+      submitButton.textContent = originalText;
+    }
   });
 });
