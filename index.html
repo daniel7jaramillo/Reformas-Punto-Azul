@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Punto Azul | Reformas integrales, cocinas, baños y fachadas</title>
+    <meta
+      name="description"
+      content="Punto Azul: empresa de reformas integrales, cocinas y baños, fachadas y rehabilitación, con gestión de proyectos y licencias. Pide tu presupuesto sin compromiso."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- ========== NAVBAR ========== -->
+    <header class="site-header" id="inicio-header">
+      <nav class="navbar container" aria-label="Navegación principal">
+        <a href="#inicio" class="brand" aria-label="Punto Azul - Ir al inicio">
+          <img
+            src="logo.png"
+            alt="Logotipo de Punto Azul"
+            class="brand__logo"
+            width="160"
+            height="48"
+          />
+        </a>
+
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#servicios" class="nav-link">Servicios</a></li>
+          <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+          <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+          <li>
+            <a href="#contacto" class="btn btn--primary btn--small nav-cta"
+              >Pedir Presupuesto</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ========== HERO ========== -->
+      <section class="hero" id="inicio">
+        <img
+          src="hero-bg.jpg"
+          alt="Interior reformado por Punto Azul"
+          class="hero__bg"
+        />
+        <div class="hero__overlay"></div>
+        <div class="container hero__content">
+          <p class="eyebrow reveal">Empresa de reformas</p>
+          <h1 class="hero__title reveal" style="--delay: 100ms">
+            Reformas integrales que transforman tu espacio con solidez y
+            confianza
+          </h1>
+          <p class="hero__subtitle reveal" style="--delay: 200ms">
+            Más de una década construyendo hogares y negocios con materiales de
+            primera calidad, plazos claros y un equipo profesional que cumple lo
+            que promete.
+          </p>
+          <div class="hero__actions reveal" style="--delay: 300ms">
+            <a href="#contacto" class="btn btn--primary"
+              >Solicita tu presupuesto gratis</a
+            >
+            <a href="#proyectos" class="btn btn--outline">Ver proyectos</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== SERVICIOS ========== -->
+      <section class="section" id="servicios">
+        <div class="container">
+          <header class="section__header reveal">
+            <p class="eyebrow eyebrow--dark">Qué hacemos</p>
+            <h2 class="section__title">Nuestros servicios</h2>
+            <p class="section__lead">
+              Un único equipo para todo el proceso: desde el proyecto y las
+              licencias hasta la entrega de llaves.
+            </p>
+          </header>
+
+          <div class="cards">
+            <article class="card reveal">
+              <div class="card__icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="28"
+                  height="28"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M3 11l9-8 9 8" />
+                  <path d="M5 10v10h14V10" />
+                  <path d="M10 20v-6h4v6" />
+                </svg>
+              </div>
+              <h3 class="card__title">Reformas Integrales</h3>
+              <p class="card__text">
+                Renovamos tu vivienda o local de principio a fin: demolición,
+                albañilería, instalaciones, carpintería y acabados.
+              </p>
+            </article>
+
+            <article class="card reveal" style="--delay: 100ms">
+              <div class="card__icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="28"
+                  height="28"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M4 11h16v4a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4v-4z" />
+                  <path d="M7 11V6a2 2 0 0 1 2-2h1" />
+                  <path d="M7 19l-1 2" />
+                  <path d="M17 19l1 2" />
+                </svg>
+              </div>
+              <h3 class="card__title">Cocinas y Baños</h3>
+              <p class="card__text">
+                Espacios funcionales y duraderos, con diseño a medida,
+                fontanería segura y revestimientos de calidad.
+              </p>
+            </article>
+
+            <article class="card reveal" style="--delay: 200ms">
+              <div class="card__icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="28"
+                  height="28"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="4" y="3" width="16" height="18" rx="1" />
+                  <path d="M8 7h2M14 7h2M8 11h2M14 11h2M8 15h2M14 15h2" />
+                  <path d="M10 21v-3h4v3" />
+                </svg>
+              </div>
+              <h3 class="card__title">Fachadas y Rehabilitación</h3>
+              <p class="card__text">
+                Rehabilitación de fachadas, cubiertas y elementos comunes con
+                aislamiento térmico y trabajos en altura certificados.
+              </p>
+            </article>
+
+            <article class="card reveal" style="--delay: 300ms">
+              <div class="card__icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="28"
+                  height="28"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"
+                  />
+                  <path d="M14 3v5h5" />
+                  <path d="M9 13h6M9 17h4" />
+                </svg>
+              </div>
+              <h3 class="card__title">Proyectos y Licencias</h3>
+              <p class="card__text">
+                Nos encargamos de la documentación técnica, los permisos y las
+                licencias de obra para que no te preocupes de nada.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== GALERÍA DE PROYECTOS ========== -->
+      <section class="section section--alt" id="proyectos">
+        <div class="container">
+          <header class="section__header reveal">
+            <p class="eyebrow eyebrow--dark">Nuestro trabajo</p>
+            <h2 class="section__title">Proyectos realizados</h2>
+            <p class="section__lead">
+              Una selección de obras que reflejan nuestra forma de trabajar:
+              rigor, limpieza y acabados impecables.
+            </p>
+          </header>
+
+          <div class="gallery">
+            <figure class="gallery__item gallery__item--large reveal">
+              <img
+                src="reforma-integral.webp"
+                alt="Reforma integral de una vivienda"
+                loading="lazy"
+              />
+              <figcaption>
+                <span class="gallery__tag">Reforma integral</span>
+                <span class="gallery__name">Vivienda completa renovada</span>
+              </figcaption>
+            </figure>
+
+            <figure
+              class="gallery__item gallery__item--fit reveal"
+              style="--delay: 100ms"
+            >
+              <video
+                class="gallery__bg"
+                src="baños.mp4"
+                autoplay
+                muted
+                loop
+                playsinline
+                aria-hidden="true"
+              ></video>
+              <video
+                class="gallery__video"
+                src="baños.mp4"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                aria-label="Baño en microcemento"
+              ></video>
+              <figcaption>
+                <span class="gallery__tag">Baños</span>
+                <span class="gallery__name">Baño en microcemento</span>
+              </figcaption>
+            </figure>
+
+            <figure class="gallery__item reveal" style="--delay: 200ms">
+              <img
+                src="fachadas.jpg"
+                alt="Rehabilitación de fachada"
+                loading="lazy"
+              />
+              <figcaption>
+                <span class="gallery__tag">Fachadas</span>
+                <span class="gallery__name">Rehabilitación de fachada</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== SOBRE NOSOTROS ========== -->
+      <section class="section" id="nosotros">
+        <div class="container about">
+          <div class="about__media reveal">
+            <img
+              src="nosotros.jpg"
+              alt="Equipo profesional de Punto Azul en una obra"
+              loading="lazy"
+            />
+            <div class="about__badge">
+              <strong>+10</strong>
+              <span>años de experiencia</span>
+            </div>
+          </div>
+
+          <div class="about__content">
+            <p class="eyebrow eyebrow--dark reveal">Por qué elegirnos</p>
+            <h2 class="section__title reveal" style="--delay: 100ms">
+              Un equipo en el que puedes confiar
+            </h2>
+            <p class="section__lead reveal" style="--delay: 150ms">
+              En Punto Azul entendemos que una reforma es una decisión
+              importante. Por eso trabajamos con transparencia, planificación y
+              compromiso en cada obra.
+            </p>
+
+            <ul class="checklist">
+              <li class="reveal" style="--delay: 200ms">
+                <span class="checklist__icon" aria-hidden="true">✓</span>
+                <div>
+                  <h3>Presupuesto cerrado y sin sorpresas</h3>
+                  <p>
+                    Detallamos cada partida antes de empezar y respetamos lo
+                    acordado.
+                  </p>
+                </div>
+              </li>
+              <li class="reveal" style="--delay: 280ms">
+                <span class="checklist__icon" aria-hidden="true">✓</span>
+                <div>
+                  <h3>Cumplimiento de plazos</h3>
+                  <p>
+                    Planificación rigurosa y seguimiento semanal del avance de
+                    la obra.
+                  </p>
+                </div>
+              </li>
+              <li class="reveal" style="--delay: 360ms">
+                <span class="checklist__icon" aria-hidden="true">✓</span>
+                <div>
+                  <h3>Materiales y mano de obra de calidad</h3>
+                  <p>Profesionales cualificados y materiales con garantía.</p>
+                </div>
+              </li>
+              <li class="reveal" style="--delay: 440ms">
+                <span class="checklist__icon" aria-hidden="true">✓</span>
+                <div>
+                  <h3>Garantía y atención posventa</h3>
+                  <p>Seguimos a tu lado una vez terminada la obra.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== CONTACTO ========== -->
+      <section class="section section--dark" id="contacto">
+        <div class="container contact">
+          <div class="contact__info reveal">
+            <p class="eyebrow">Hablemos de tu reforma</p>
+            <h2 class="section__title section__title--light">
+              Pide tu presupuesto sin compromiso
+            </h2>
+            <p class="contact__lead">
+              Cuéntanos qué necesitas y te responderemos en menos de 24 horas
+              laborables con una propuesta clara.
+            </p>
+            <ul class="contact__list">
+              <li>
+                <strong>Teléfono:</strong>
+                <a href="tel:+34631661933">+34 631 661 933</a>
+              </li>
+              <li>
+                <strong>Email:</strong>
+                <a href="mailto:contacto@reformaspuntoazul.com">contacto@reformaspuntoazul.com</a>
+              </li>
+              <li><strong>Horario:</strong> Lunes a viernes, 9:00 – 18:00</li>
+            </ul>
+          </div>
+
+          <form
+            class="form reveal"
+            id="contact-form"
+            style="--delay: 150ms"
+            novalidate
+          >
+            <div class="form__group">
+              <label for="nombre">Nombre y apellidos</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                autocomplete="name"
+                required
+              />
+              <span class="form__error" id="error-nombre" role="alert"></span>
+            </div>
+
+            <div class="form__row">
+              <div class="form__group">
+                <label for="telefono">Teléfono</label>
+                <input
+                  type="tel"
+                  id="telefono"
+                  name="telefono"
+                  autocomplete="tel"
+                  required
+                />
+                <span
+                  class="form__error"
+                  id="error-telefono"
+                  role="alert"
+                ></span>
+              </div>
+              <div class="form__group">
+                <label for="email">Correo electrónico</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                />
+                <span class="form__error" id="error-email" role="alert"></span>
+              </div>
+            </div>
+
+            <div class="form__group">
+              <label for="mensaje">Describe tu reforma</label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="5"
+                required
+              ></textarea>
+              <span class="form__error" id="error-mensaje" role="alert"></span>
+            </div>
+
+            <div class="form__group form__group--check">
+              <input
+                type="checkbox"
+                id="privacidad"
+                name="privacidad"
+                required
+              />
+              <label for="privacidad"
+                >He leído y acepto el <a href="#aviso-legal">aviso legal</a> y
+                la política de privacidad.</label
+              >
+              <span
+                class="form__error"
+                id="error-privacidad"
+                role="alert"
+              ></span>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--block">
+              Enviar solicitud
+            </button>
+            <p class="form__success" id="form-success" role="status" hidden>
+              ¡Gracias! Hemos recibido tu solicitud y nos pondremos en contacto
+              contigo muy pronto.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+      <div class="container footer__grid">
+        <div class="footer__col">
+          <h3 class="footer__title">Punto Azul</h3>
+          <p>
+            Reformas integrales, cocinas y baños, fachadas y rehabilitación,
+            proyectos y licencias.
+          </p>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Contacto</h3>
+          <address>
+            <br />
+            28033 Madrid<br />
+            <a href="tel:+34631661933">+34 631 661 933</a><br />
+            <a href="mailto:contacto@reformaspuntoazul.com">contacto@reformaspuntoazul.com</a>
+          </address>
+        </div>
+
+        <div class="footer__col" id="aviso-legal">
+          <h3 class="footer__title">Aviso legal</h3>
+          <p class="footer__legal">
+            Titular: Punto Azul Reformas · CIF: 61447363b ·           Los datos facilitados a través del
+            formulario se utilizarán únicamente para responder a tu solicitud.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="container">
+          <p>
+            &copy; <span id="year">2026</span> Punto Azul. Todos los derechos
+            reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
